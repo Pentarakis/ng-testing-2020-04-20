@@ -1,0 +1,27 @@
+<form>
+
+  <div>
+    <label>
+      Name:<br>
+      <input name="name" [(ngModel)]="book.name" >
+    </label>
+  </div>
+
+  <br>
+
+  <div>
+    <label>
+      ISBN:<br>
+      <input name="isbn" [(ngModel)]="book.isbn" >
+    </label>
+  </div>
+
+  <br>
+
+  <div>
+    <button (click)="save()">
+      {{ book.id ? 'New' : 'Add' }}
+    </button>
+  </div>
+
+</form>
