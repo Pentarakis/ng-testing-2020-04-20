@@ -44,7 +44,7 @@ describe('BookService', () => {
       const expectedBook = service.books[2];
 
       // WHEN
-      const result = service.read(expectedBook.id)
+      const result = service.read(expectedBook.id);
 
       // THEN
       expect(result).toEqual(expectedBook);

@@ -13,10 +13,10 @@ export class BookListComponent implements OnInit {
   books: Book[];
 
   constructor(private bookService: BookService) {
-    this.books = this.bookService.readAll();
   }
 
   ngOnInit() {
+    this.books = this.bookService.readAll();
   }
 
   save(book: Book): void {
