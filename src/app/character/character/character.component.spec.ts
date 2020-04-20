@@ -22,10 +22,26 @@ describe('CharacterComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(CharacterComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+  });
+
+  describe('lorem ipsum', () => {
+    beforeEach(() => {
+      fixture.detectChanges();
+    });
+
+    it('should create', () => {
+      expect(component).toBeTruthy();
+    });
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+
+    // GIVEN
+    // inputs setzen
+
+    // WHEN
+    fixture.detectChanges();
+
+   expect(component).toBeTruthy();
   });
 });
